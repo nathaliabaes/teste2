@@ -3,49 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <div class="header-content">
+            <div class="profile-picture">
+                <!-- Espaço para a imagem de perfil -->
+                <p>Adicionar imagem</p>
+            </div>
+            <h1>PORTFÓLIO PESSOAL</h1>
+            <p class="nome">Nathalia Baes</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contate-me</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Este é o meu portfólio online, onde você pode saber mais sobre mim, minha formação, ver alguns dos meus trabalhos e entrar em contato comigo.</p>
-    </main>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Sobre Mim</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <p>Olá! Meu nome é [Seu Nome]. Tenho [Sua Idade] anos e meus hobbies incluem [Seus Hobbies].</p>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Texto sobre você, seus hobbies, interesses pessoais etc.</p>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação</h2>
+            <p>Informações sobre sua formação educacional e idiomas.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Links e exemplos de trabalhos que você realizou.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Nathalia Baes. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
