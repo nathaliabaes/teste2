@@ -1,64 +1,119 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f8e5c6; /* Cor de fundo amarelo claro */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #f8e5c6; /* Mesma cor de fundo */
+    color: #333;
+    padding: 40px 0;
     text-align: center;
+}
+
+.header-content {
+    position: relative;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.nome {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #333;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
-    background-color: white;
-    margin: 20px auto;
     max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
     background-color: #333;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 form button:hover {
     background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
